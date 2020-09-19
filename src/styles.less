@@ -76,14 +76,46 @@ input {
   align-items: flex-end;
 }
 .tictactoe {
-  border: 2px solid darkblue;
+  display: flex;
+  flex-direction: column;
+}
+.board {
+  border: 2px solid white;
   border-radius: 0px;
-  width: 250px;
-  height: 250px;
-  margin: 0 auto;
+  width: 150px;
+  height: 150px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+}
+li {
+  list-style: none;
+}
+.tictactoe-squares {
+  background: lightgray;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+}
+.X {
+  color: red;
+}
+.O {
+  color: green;
+}
+.info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.info-wrapper button {
+  background-color: lightgray;
+  color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0.25rem 0;
 }
 .todo-list {
   background: #e8e8e8;
